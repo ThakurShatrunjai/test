@@ -7,41 +7,32 @@ export interface ButtonProps
 }
 
 export function Button({
-  className,
+  className = "",
   variant = "default",
   size = "default",
   ...props
 }: ButtonProps) {
-  let variantClasses = "";
-  let sizeClasses = "";
+  const base =
+    "inline-flex items-center justify-center rounded-md font-semibold transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none";
 
-  switch (variant) {
-    case "outline":
-      variantClasses = "border border-gray-300 bg-white text-gray-900";
-      break;
-    case "ghost":
-      variantClasses = "bg-transparent text-gray-900";
-      break;
+  const variantClasses = {
     default:
-      variantClasses = "bg-black text-white";
-  }
+      "bg-primary text-white hover:bg-primary/90 focus:ring-primary",
+    outline:
+      "border border-border bg-transparent text-foreground hover:bg-accent",
+    ghost:
+      "bg-transparent text-foreground hover:bg-accent",
+  }[variant];
 
-  switch (size) {
-    case "sm":
-      sizeClasses = "px-3 py-1.5 text-sm";
-      break;
-    case "lg":
-      sizeClasses = "px-6 py-3 text-lg";
-      break;
-    default:
-      sizeClasses = "px-4 py-2";
-  }
+  const sizeClasses = {
+    sm: "h-9 px-3 text-sm",
+    default: "h-11 px-5 text-base",
+    lg: "h-14 px-8 text-lg",
+  }[size];
 
   return (
     <button
-      className={`rounded-md font-medium ${variantClasses} ${sizeClasses} ${
-        className ?? ""
-      }`}
+      className={`${base} ${variantClasses} ${sizeClasses} ${className}`}
       {...props}
     />
   );
