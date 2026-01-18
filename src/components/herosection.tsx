@@ -103,7 +103,11 @@ export default function HeroSection() {
             className="absolute inset-0 w-full h-full object-cover"
             onError={() => setVideoError(true)}
           >
-            <source src="/assets/Fast_Web_Background_Video_Generation.mp4" type="video/mp4" />
+            <source
+  src={`${import.meta.env.BASE_URL}assets/Fast_Web_Background_Video_Generation.mp4`}
+  type="video/mp4"
+/>
+
           </video>
         )}
         
@@ -112,7 +116,7 @@ export default function HeroSection() {
           <div 
             className="absolute inset-0 bg-cover bg-center"
             style={{
-              backgroundImage: 'url(/assets/ho.jpg)',
+backgroundImage: `url(${import.meta.env.BASE_URL}assets/ho.jpg)`,
             }}
           />
         )}
