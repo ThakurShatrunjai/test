@@ -2,21 +2,20 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import path from 'path'
 
-// Change base to your repository name for GitHub Pages
 export default defineConfig({
   plugins: [react()],
-  base: '/dpglobals/',
+
+  // 🔴 MUST match your GitHub repo name
+  base: '/Test/',
+
   resolve: {
     alias: {
       '@': path.resolve(__dirname, 'src'),
     },
   },
+
+  // 🔴 IMPORTANT: build to docs (GitHub Pages supports this)
   build: {
-    outDir: 'dist',
-    assetsDir: 'assets',
-  },
-  server: {
-    port: 5173,
-    open: true,
+    outDir: 'docs',
   },
 })
