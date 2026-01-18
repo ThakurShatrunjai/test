@@ -182,15 +182,8 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="border-t border-slate-600 pt-6 text-center text-xs text-slate-300">
           <p className="flex items-center justify-center gap-2 flex-wrap">
-            © 2025. Built with <Heart className="h-3.5 w-3.5 text-red-500 fill-red-500 animate-glow-pulse" /> using{' '}
-            <a 
-              href="https://caffeine.ai" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="text-blue-300 hover:text-blue-200 transition-colors duration-300 font-semibold"
-            >
-              caffeine.ai
-            </a>
+            © 2025. Built with <Heart className="h-3.5 w-3.5 text-red-500 fill-red-500 animate-glow-pulse" /> 
+            
           </p>
         </div>
       </div>
