@@ -95,27 +95,14 @@ export default function QueryFormSection() {
             />
 
             {/* Submit */}
-            <Button
-                          placeholder="Submit"
-
+           <button
   type="submit"
-  size="lg"
   disabled={loading}
-  className="w-full bg-primary text-black border-2 border-primary shadow-lg hover:bg-primary/90 hover:shadow-xl"
+  className="w-full mt-4 h-12 rounded-md bg-blue-600 text-white font-semibold hover:bg-blue-700 transition disabled:opacity-60"
 >
+  {loading ? 'Sending...' : 'Submit'}
+</button>
 
-              {loading ? (
-                <span className="flex items-center gap-2">
-                  <Loader2 className="w-5 h-5 animate-spin" />
-                  Sending...
-                </span>
-              ) : (
-                <span className="flex items-center gap-2">
-                  <Send className="w-5 h-5" />
-                  Submit Query
-                </span>
-              )}
-            </Button>
           </form>
         </div>
       </div>
