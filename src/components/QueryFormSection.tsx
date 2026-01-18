@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { toast } from 'sonner';
+import SectionBadge from "@/components/ui/SectionBadge";
+
 import {
   Send,
   Loader2,
@@ -24,10 +26,16 @@ export default function QueryFormSection() {
   };
 
   return (
+
     <section
       id="query"
       className="py-28 bg-gradient-to-b from-background to-accent/10"
     >
+<SectionBadge label="Quick Contact" />
+<h2 className="text-3xl font-bold text-foreground text-center">
+  Submit Your Query
+</h2>
+
       <div className="container mx-auto px-4">
         <div className="max-w-xl mx-auto bg-card border border-border rounded-3xl shadow-xl p-8 md:p-10">
           

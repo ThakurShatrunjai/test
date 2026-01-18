@@ -1,5 +1,6 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import SectionBadge from "@/components/ui/SectionBadge";
 
 export default function AboutUsPage() {
   const base = import.meta.env.BASE_URL || '/';
@@ -7,6 +8,10 @@ export default function AboutUsPage() {
   return (
     <div className="min-h-screen bg-background">
       <Header />
+<SectionBadge label="About Us" />
+<h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
+  Navigating Global Logistics with Precision
+</h1>
 
       <main className="pt-32 pb-24">
         <div className="container mx-auto px-4">

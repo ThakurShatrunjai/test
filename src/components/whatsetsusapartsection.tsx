@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
+import SectionBadge from "@/components/ui/SectionBadge";
 
 export default function WhatSetsUsApartSection() {
   const [scrollY, setScrollY] = useState(0);
@@ -123,6 +124,11 @@ export default function WhatSetsUsApartSection() {
       ref={sectionRef}
       className="py-24 bg-gradient-to-b from-accent/5 via-background to-accent/5 relative overflow-hidden scroll-mt-24"
     >
+      <SectionBadge label="Why Choose Us" />
+<h2 className="text-3xl md:text-4xl font-bold text-foreground text-center">
+  What Sets Us Apart
+</h2>
+
       {/* Parallax background */}
       <div
         className="absolute inset-0 bg-gradient-to-br from-secondary/5 via-transparent to-primary/5"
