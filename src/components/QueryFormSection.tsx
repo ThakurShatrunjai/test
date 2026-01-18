@@ -99,7 +99,7 @@ export default function QueryFormSection() {
   type="submit"
   size="lg"
   disabled={loading}
-  className="w-full bg-primary text-white border-2 border-primary shadow-lg hover:bg-primary/90 hover:shadow-xl"
+  className="w-full bg-primary text-black border-2 border-primary shadow-lg hover:bg-primary/90 hover:shadow-xl"
 >
 
               {loading ? (
