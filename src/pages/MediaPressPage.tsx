@@ -8,7 +8,7 @@ export default function MediaPressPage() {
       <Header />
       <main className="pt-20 md:pt-24">
         <MediaPressSection />
-        <CorporateInfoSection />
+       
       </main>
       <Footer />
     </div>

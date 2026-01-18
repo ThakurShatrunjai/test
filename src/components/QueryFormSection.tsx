@@ -96,6 +96,8 @@ export default function QueryFormSection() {
 
             {/* Submit */}
             <Button
+                          placeholder="Submit"
+
   type="submit"
   size="lg"
   disabled={loading}
