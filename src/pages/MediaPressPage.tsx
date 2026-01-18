@@ -1,6 +1,5 @@
 import Header from '@/components/Header';
 import MediaPressSection from '@/components/MediaPressSection';
-import CorporateInfoSection from '@/components/CorporateInfoSection';
 import Footer from '@/components/Footer';
 
 export default function MediaPressPage() {
