@@ -96,11 +96,12 @@ export default function QueryFormSection() {
 
             {/* Submit */}
             <Button
-              type="submit"
-              size="lg"
-              disabled={loading}
-              className="w-full text-lg mt-2"
-            >
+  type="submit"
+  size="lg"
+  disabled={loading}
+  className="w-full bg-primary text-white border-2 border-primary shadow-lg hover:bg-primary/90 hover:shadow-xl"
+>
+
               {loading ? (
                 <span className="flex items-center gap-2">
                   <Loader2 className="w-5 h-5 animate-spin" />
